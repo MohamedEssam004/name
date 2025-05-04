@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="testt.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<i class="fas fa-home"></i> 
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library Website</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Library System</div>
+
+        <div class="all">
+        <div class="profile-icon">
+            <a href="dash.html">
+                <img src="avatar.jpg" alt="User Avatar">
+            </a>
+        </div>
+        <div>
+          <a href="userprofile.html">profile</a>
+        </div>
+      </div>
+
+    </nav>
+    <main class="container">
+        <div class="search-bar">
+            <input  type="text" id="searchInput" placeholder="Search for stocks, ETFs, or bonds" >
+            <i class="fas fa-search"></i>
+        </div>
+
+
+
+
+        <section class="Intro">
+            <div class="Intro-text">
+                <h1><span class="highlight">Welcome to our library</span> Your Gateway to Knowledge 🌟</h1>
+                <p>Discover a world of books, research materials, and digital resources at our library, Whether you're a student, researcher, or book lover, our library offers a vast collection of physical and digital materials to support your learning journey.</p>
+            </div>
+            <div class ="Intro-Image">
+                <img src="Image.jpg">
+            </div>
+        </section>
+
+        <section class="dashboard">
+            <a href="book_list.html" class="card card1">
+                <i class="fas fa-book"></i>
+                <h2>Books List</h2>
+            </a>
+            <a href="bookauthors.html" class="card card2">
+                <i class="fas fa-plus-circle"></i>
+                <h2>Authors</h2>
+            </a>
+            <a href="book_form.html" class="card card3">
+                <i class="fas fa-edit"></i>
+                <h2>Add/Edit Book</h2>
+            </a>
+            <a href="signup.html" class="card card4">
+              <i class="fas fa-sign-out-alt"></i>
+              <h2>Logout</h2>
+          </a>
+        </section>
+    </main>
+    <button id="showAlert" ></button>
+    <div id="customAlert" class="alert-box" style="display: none">
+        <div class="alert-content">
+            <h2> Alert</h2>
+            <p id="text"> Book is found in the system, you can check the book list </p>
+            <button id="GoToList" class="btn"> Book List </button>
+            <button id="confirm" class="btn"> OK  </button>
+
+        </div>
+    </div>
+    <script src='LibrarySystemSearch.js'> </script>
+</body>
+</html>

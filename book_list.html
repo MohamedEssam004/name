@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book List by Category</title>
+  <link rel="stylesheet" href="booklist.css">
+</head>
+<body>
+
+  <header>
+    <h1>Book List</h1>
+  </header>
+
+  <section class="filter-section">
+    <form id="filterForm">
+      <input type="text" name="title" id="title" placeholder="Filter by Title">
+      <input type="text" name="author" id="author" placeholder="Filter by Author">
+      <select name="categoryFilter" id="categoryFilter">
+        <option value="">All Categories</option>
+        <option value="fiction">Fiction</option>
+        <option value="nonfiction">Non-Fiction</option>
+        <option value="mystery">Mystery</option>
+        <option value="sci-fi">Sci-Fi</option>
+        <option value="romance">Romance</option>
+        <option value="historical">Historical</option>
+        <option value="horror">Horror</option>
+        <option value="poetry">Poetry</option>
+        <option value="psychology">Psychology</option>
+        <option value="religion">Religion</option>
+      </select>
+      <button type="submit">Filter</button>
+    </form>
+  </section>
+  
+
+  <section class="filtered-results">
+    <table>
+      <thead>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody id="tbody">
+      </tbody>
+    </table>
+  </section>
+</section>
+
+
+  <section class="categories-container">
+
+    <details class="category-section">
+      <summary>Fiction</summary>
+      <div class="book-list">
+        <p>1-<a href="bookdetails.html">The Great Gatsby</a></p>
+      </div>
+    </details>
+
+    <details class="category-section">
+      <summary>Non-Fiction</summary>
+      <div class="book-list">
+        <p>No books available in this category.</p>
+      </div>
+    </details>
+
+    <details class="category-section">
+      <summary>Mystery</summary>
+      <div class="book-list">
+        <p>No books available in this category.</p>
+      </div>
+    </details>
+
+    <details class="category-section">
+      <summary>Sci-Fi</summary>
+      <div class="book-list">
+        <p>No books available in this category.</p>
+      </div>
+    </details>
+
+    <details class="category-section">
+      <summary>Romance</summary>
+      <div class="book-list">
+        <p>No books available in this category.</p>
+      </div>
+    </details>
+
+    <details class="category-section">
+      <summary>Historical</summary>
+      <div class="book-list">
+        <p>No books available in this category.</p>
+      </div>
+    </details>
+
+    <details class="category-section">
+      <summary>Horror</summary>
+      <div class="book-list">
+        <p>No books available in this category.</p>
+      </div>
+    </details>
+
+    <details class="category-section">
+      <summary>Poetry</summary>
+      <div class="book-list">
+        <p>No books available in this category.</p>
+      </div>
+    </details>
+
+    <details class="category-section">
+      <summary>Psychology</summary>
+      <div class="book-list">
+        <p>No books available in this category.</p>
+      </div>
+    </details>
+
+    <details class="category-section">
+      <summary>Religion</summary>
+      <div class="book-list">
+        <p>No books available in this category.</p>
+      </div>
+    </details>
+
+  </section>
+  <script src="booklist.js"></script>
+  <script src="filter.js"></script>
+</body>
+</html>

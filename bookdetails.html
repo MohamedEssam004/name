@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Details</title>
+  <link rel="stylesheet" href="bookdetails.css"/>
+</head>
+
+<body>
+  
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">Library</div>
+      <ul class="nav">
+        <li><a href="dash.html">Dashboard</a></li>
+        <li><a href="userprofile.html">Profile</a></li>
+        <li><a href="bookauthors.html">Authors</a></li>
+        <li><a href="book_list.html">Books</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <div class="book-details">
+        <div class="book-cover">
+          <img id="book-cover" src="" alt="Book Cover">
+        </div>
+
+        <div class="book-info">
+          <h1 id="book-title"></h1>
+          <h3 id="book-author"></h3>
+          <p class="summary" id="book-summary"></p>
+
+          <div class="meta">
+            <span id="book-genre"></span>
+            <span id="book-language"></span>
+          </div>
+
+          <span><strong>Status:</strong> 
+            <strong id="status" class="state available">Available</strong>
+          </span>
+
+          <div class="actions">
+            <button id="borrowBtn" class="borrow-btn">Borrow</button>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="bookdetails.js"></script>
+  <script src="book_detailes.js"></script>
+</body>
+</html>

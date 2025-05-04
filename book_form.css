@@ -1,0 +1,132 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0c1a, #1a1d36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e2e8f0;
+}
+
+.heroo {
+  background: #0f172a;
+  border-radius: 12px;
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 12px 40px rgba(50, 50, 50, 1.5);
+  border: 1px solid #1e293b;
+}
+
+h1 {
+  color: #38bdf8;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2.4em;
+  text-shadow: 0 2px 8px rgba(56, 189, 248, 0.2);
+  letter-spacing: 1px;
+}
+
+#book-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: #a0aec0;
+  font-size: 0.9em;
+}
+
+input:not([type="submit"]),
+select,
+textarea,
+#book-select {
+  width: 100%;
+  padding: 14px;
+  background: #1a1d36;
+  border: 2px solid #2d3748;
+  border-radius: 8px;
+  color: #f0e2e2;
+  font-size: 1em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+  background: #1e293b;
+}
+
+#book-image {
+  position: relative;
+  padding: 1.5rem;
+  border: 2px solid #2d3748;
+  border-radius: 8px;
+  background: #1a1d36;
+  color: #a0aec0;
+  cursor: pointer;
+  transition: all 0.3s so;
+  grid-column: span 2;
+}
+
+#book-image:hover {
+  border-color: #4299e1;
+  background: #1e293b;
+}
+
+
+
+input[type="submit"] {
+  background: #4299e1;
+  color: white;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  grid-column: span 1;
+}
+
+input[type="submit"][value="Add"] {
+  background: linear-gradient(135deg, #48bb78, #38a169);
+}
+
+input[type="submit"][value="Edit"] {
+  background: linear-gradient(135deg, #f6e05e, #d69e2e);
+}
+
+input[type="submit"][value="Delete"] {
+  background: linear-gradient(135deg, #f56565, #c53030);
+}
+
+input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  filter: brightness(105%);
+}
+
+#description {
+  resize: vertical;
+  min-height: 140px;
+  grid-column: span 2;
+}
+
+
+
+
+

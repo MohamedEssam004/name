@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Profile</title>
+  <link rel="stylesheet" href="userprofile.css"/>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">Library</div>
+      <ul class="nav">
+        <li><a href="dash.html">Dashboard</a></li>
+        <li><a href="userprofile.html">Profile</a></li>
+        <li><a href="bookauthors.html">Authors</a></li>
+        <li><a href="book_list.html">Books</a></li>
+      </ul>
+    </aside>
+
+   <main class="content">
+      <div class="profile">
+        <h1>User Profile</h1>
+        <div class="user-info">
+          <p id="profileName"><strong>Name:</strong> USER</p>
+          <p id="profileEmail"><strong>Email:</strong> User@example.com</p>
+        </div>
+
+        <h2>My Borrowed Books</h2>
+        <div class="borrowed-books" id="borrowedBooksContainer">
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="userprofile.js"></script>
+  <script src="userprofilee.js"></script>
+</body>
+</html>
